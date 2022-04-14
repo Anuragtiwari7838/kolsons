@@ -1,7 +1,7 @@
 from distutils.command.upload import upload
 from django.db import models
 
-# Create your models here.
+# Create your models here. path("index/<int:id>",viewss.ind) , href="index/object.id"
 
 class Product(models.Model):
     part_no = models.AutoField(primary_key=True)
