@@ -222,6 +222,7 @@ h5,
 h6,
 .heading {
     font-family: Georgia, "Times New Roman", Times, serif;
+ 
 }
 
 
@@ -1147,4 +1148,10 @@ table a,
             font-size: 1.6rem;
         }
     } 
+}
+#bgimg{
+    background-image:url('../images/demo/backgrounds/01.png');
+}
+#enqheading{
+    margin-bottom: 5px;
 }
