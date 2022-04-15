@@ -1,5 +1,6 @@
 from django.shortcuts import render
 import smtplib
+from .clients import clientsM
 from email.message import EmailMessage
 
 def enquiry(request):
@@ -12,8 +13,13 @@ def market(request):
     return render(request, 'market.html')
 def product(request):
     return render(request, 'product.html')
+
+# following function extract information of clints from database
 def client(request):
-    return render(request, 'client.html')
+    clients = clientsM.objects.all()
+    return render(request, 'client.html',{'clients':clients})
+
+
 def certifications(request):
     return render(request, 'certifications.html')
 

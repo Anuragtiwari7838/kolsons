@@ -1155,3 +1155,10 @@ table a,
 #enqheading{
     margin-bottom: 5px;
 }
+/* .clints{
+    display: flex;
+    flex-direction: row;
+} */
+.card{
+    min-width: 300px;
+}
