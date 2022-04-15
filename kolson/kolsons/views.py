@@ -1,4 +1,7 @@
 from django.shortcuts import render
+from kolsons.models import Product
+
+
 
 def enquiry(request):
     return render(request, 'enquiry.html')
@@ -9,8 +12,12 @@ def contactus(request):
 def market(request):
     return render(request, 'market.html')
 def product(request):
-    return render(request, 'product.html')
+    product = Product.objects.all()
+    return render(request, 'product.html',{'product': product})
 def client(request):
     return render(request, 'client.html')
 def certifications(request):
     return render(request, 'certifications.html')
+def productpost(request,id):
+    product = Product.objects.filter(part_no=id).first()
+    return render(request,'kolsons/productpost.html' , {'product': product})
