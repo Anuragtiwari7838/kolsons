@@ -1,6 +1,9 @@
 from django.shortcuts import render
 import smtplib
-from .clients import clientsM
+from .models import clientsM, certificatsM
+# for certificate display
+from django.http import FileResponse, Http404
+
 from email.message import EmailMessage
 
 def enquiry(request):
@@ -20,8 +23,19 @@ def client(request):
     return render(request, 'client.html',{'clients':clients})
 
 
+# following functions return instance of certificats on certifications page
 def certifications(request):
-    return render(request, 'certifications.html')
+    certificats = certificatsM.objects.all()
+    return render(request, 'certifications.html',{'certificats':certificats})
+
+# following function open the requested certificate in browser
+def certificateDoc(request,id):
+    try:
+        
+        certificate = certificatsM.objects.get(id=id)
+        return FileResponse(certificate.certificatePDF, content_type='application/pdf')
+    except FileNotFoundError:
+        raise Http404()
 
 # enquiry form mailing function
 def enquiry_form(request):
