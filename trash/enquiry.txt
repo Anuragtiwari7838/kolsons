@@ -1,0 +1,165 @@
+
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="preconnect" href="static 'https://fonts.googleapis.com'">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/enquiry.css' %}">
+    
+
+    <style>
+
+
+
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Enquiry Form</title>
+  </head>
+  <body>
+    {% load static %}
+
+
+
+
+
+
+
+<h1 >hello
+  
+</h1>
+
+
+
+
+
+    <!--  starting templates  -->
+    <body id="top">
+        <div class="wrapper row0">
+          <div id="topbar" class="hoc clear"> 
+             <div class="fl_left">
+              <ul class="nospace">
+                <li><a href="#"><i class="fas fa-home fa-lg"></i></a></li>
+                <li><a href="#" style="text-decoration: none;">About</a></li>
+                <li><a href="#" style="text-decoration: none;">Contact</a></li>
+                <li><a href="#" style="text-decoration: none;">Login</a></li>
+                <li><a href="#" style="text-decoration: none;">Register</a></li>
+              </ul>
+            </div>
+            <div class="fl_right">
+              <ul class="nospace">
+                <li><i class="fas fa-phone rgtspace-5"></i> +00 (123) 456 7890</li>
+                <li><i class="fas fa-envelope rgtspace-5"></i> info@domain.com</li>
+              </ul>
+            </div>
+              </div>
+        </div>
+        <div class="wrapper row1">
+          <header id="header" class="hoc clear"> 
+            <div id="logo" class="one_half first">
+              <h1 class="logoname"><span>Kolsons</span> Middle East</h1>
+            </div>
+            <div class="one_half">
+              <ul class="nospace clear">
+                <li class="one_half first">
+                  <div class="block clear"><i class="fas fa-phone"></i> <span><strong class="block">Call Us:</strong> +00 (123) 456 7890</span> </div>
+                </li>
+                <li class="one_half">
+                  <div class="block clear"><i class="far fa-clock"></i> <span><strong class="block"> Mon. - Sat.:</strong> 08.00am - 18.00pm</span> </div>
+                </li>
+              </ul>
+            </div>
+             </header>
+          <nav id="mainav" class="hoc clear"> 
+            <ul class="clear">
+              <li class="active"><a href="/" style="text-decoration: none;">Home</a></li>
+              <li><a class="drop" href="#" style="text-decoration: none;">Pages</a>
+                <ul>
+                  <li><a href="pages/gallery.html" style="text-decoration: none;">Gallery</a></li>
+                  <li><a href="pages/full-width.html" style="text-decoration: none;">Full Width</a></li>
+                  <li><a href="pages/sidebar-left.html" style="text-decoration: none;">Sidebar Left</a></li>
+                  <li><a href="pages/sidebar-right.html" style="text-decoration: none;">Sidebar Right</a></li>
+                  <li><a href="pages/basic-grid.html" style="text-decoration: none;">Basic Grid</a></li>
+                  <li><a href="pages/font-icons.html" style="text-decoration: none;">Font Icons</a></li>
+                </ul>
+              </li>
+              <li><a class="drop" href="#" style="text-decoration: none;">Dropdown</a>
+                <ul>
+                  <li><a href="#" style="text-decoration: none;">Level 2</a></li>
+                  <li><a class="drop" href="#" style="text-decoration: none;">Level 2 + Drop</a>
+                    <ul>
+                      <li><a href="#" style="text-decoration: none;">Level 3</a></li>
+                      <li><a href="#" style="text-decoration: none;">Level 3</a></li>
+                      <li><a href="#" style="text-decoration: none;">Level 3</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#" style="text-decoration: none;">Level 2</a></li>
+                </ul>
+              </li>
+              <li><a href="#" style="text-decoration: none;">Link Text</a></li>
+              <li><a href="#" style="text-decoration: none;">Link Text</a></li>
+              <li><a href="/kolsons/about" style="text-decoration: none;">About us</a></li>
+              <li><a href="/kolsons/enquiry" style="text-decoration: none;">Enquiry Form</a></li>
+            </ul>
+               </nav>
+        </div>
+        <!--  ending templates  -->
+
+      
+       
+        
+
+
+
+        
+        
+           
+        
+        
+        <!-- JAVASCRIPTS -->
+        <script src="layout/scripts/jquery.min.js"></script>
+        <script src="layout/scripts/jquery.backtotop.js"></script>
+        <script src="layout/scripts/jquery.mobilemenu.js"></script>
+        </body>
+    
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

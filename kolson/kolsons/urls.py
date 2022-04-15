@@ -9,4 +9,5 @@ urlpatterns = [
     path('contactus',views.contactus,name='contactus'),
     path('market',views.market,name='market'),
     path('product',views.product,name='product'),
+    path('enquiryform',views.enquiry_form,name='enquiryform'),
 ] 
