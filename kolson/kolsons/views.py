@@ -1,3 +1,4 @@
+from math import prod
 from django.shortcuts import render
 import smtplib
 from .models import clientsM, certificatsM
@@ -6,6 +7,7 @@ from django.http import FileResponse, Http404
 
 from email.message import EmailMessage
 from kolsons.models import Product
+from django.forms.models import model_to_dict
 
 
 
@@ -76,4 +78,15 @@ def enquiry_form(request):
     
 def productpost(request,id):
     product = Product.objects.filter(part_no=id).first()
-    return render(request,'kolsons/productpost.html' , {'product': product})
+    
+    flag=[]
+    keyset = list(Product._meta.get_fields())
+    for f in keyset:
+        if getattr(product,f.name)=="" or f.name=='images':
+            
+            pass
+        else:
+            # flag[f.name]=True
+            flag.append([f.name,getattr(product,f.name)])
+
+    return render(request,'kolsons/productpost.html' , {'product':product,'flag':flag})
