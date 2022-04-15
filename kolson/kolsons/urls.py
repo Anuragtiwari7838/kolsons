@@ -11,4 +11,5 @@ urlpatterns = [
     path('market',views.market,name='market'),
     path('product',views.product,name='product'),
     path('enquiryform',views.enquiry_form,name='enquiryform'),
+    path('product/<int:id>',views.productpost,name='productpost'),
 ] 

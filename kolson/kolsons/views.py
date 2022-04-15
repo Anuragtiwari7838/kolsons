@@ -5,6 +5,9 @@ from .models import clientsM, certificatsM
 from django.http import FileResponse, Http404
 
 from email.message import EmailMessage
+from kolsons.models import Product
+
+
 
 def enquiry(request):
     return render(request, 'enquiry.html')
@@ -15,9 +18,8 @@ def contactus(request):
 def market(request):
     return render(request, 'market.html')
 def product(request):
-    return render(request, 'product.html')
-
-# following function extract information of clints from database
+    product = Product.objects.all()
+    return render(request, 'product.html',{'product': product})
 def client(request):
     clients = clientsM.objects.all()
     return render(request, 'client.html',{'clients':clients})
@@ -71,3 +73,7 @@ def enquiry_form(request):
     return render(request,'enquiry.html')
 
 
+    
+def productpost(request,id):
+    product = Product.objects.filter(part_no=id).first()
+    return render(request,'kolsons/productpost.html' , {'product': product})
